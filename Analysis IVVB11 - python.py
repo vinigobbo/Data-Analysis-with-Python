@@ -8,7 +8,6 @@ print("Retornos:", retornos)
 
 retorno_max = max(retornos)
 retorno_min = min(retornos)
-
 print("Maior retorno:", retorno_max, "%")
 print("Menor retorno:", retorno_min, "%")
 
@@ -27,7 +26,6 @@ soma_quadrados = 0
 for r in retornos:
   desvio = r - media
   soma_quadrados = soma_quadrados + desvio ** 2
-
 print("Soma dos quadrados:", round(soma_quadrados, 5))
 
 volatilidade = (soma_quadrados / len(retornos)) ** 0.5
