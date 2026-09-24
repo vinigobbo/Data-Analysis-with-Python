@@ -6,6 +6,19 @@ for i in range(1, len(etf)):
   retornos.append(round(retorno * 100, 2),)
 print("Retornos:", retornos)
 
+retorno_max = max(retornos)
+retorno_min = min(retornos)
+
+print("Maior retorno:", retorno_max, "%")
+print("Menor retorno:", retorno_min, "%")
+
+dias_alta = 0
+
+for retorno in retornos:
+  if retorno > 0:
+    dias_alta += 1
+print("Dias de alta:", dias_alta)
+
 media = sum(retornos) / len(retornos)
 print("Media:", round(media, 2), "%")
 
